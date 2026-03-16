@@ -1,0 +1,24 @@
+# IEP Education Platform — requirements.txt
+# Install: pip install -r requirements.txt
+# Run:     streamlit run Home.py
+# Python:  3.9+
+
+# ── Core ──────────────────────────────────────────────────────────────────────
+streamlit>=1.32.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# ── PDF parsing (install both — pdfplumber tried first, PyMuPDF as fallback) ──
+pdfplumber>=0.10.0
+PyMuPDF>=1.23.0
+
+# ── Export ────────────────────────────────────────────────────────────────────
+openpyxl>=3.1.0
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0
+
+# ── Optional: upgrade to semantic/vector search (uncomment when ready) ────────
+# sentence-transformers>=2.6.0
+# faiss-cpu>=1.7.4
+# openai>=1.10.0
